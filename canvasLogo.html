@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Your Canvas</title>
+
+<style type="text/css"><!--
+#container { position: relative; }
+#imageTemp { position: absolute; top: 1px; left: 1px; }
+
+-->
+background-color: red;
+</style>
+
+</head>
+<body>
+<canvas id="imageView" width="600" height="500"></canvas>
+
+<script type="text/javascript">
+var canvas, context, canvaso, contexto;
+canvaso = document.getElementById('imageView');
+context = canvaso.getContext('2d');
+context.lineWidth = 5;
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(134, 116);
+context.lineTo(417, 115);
+context.stroke();
+context.closePath();
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(414, 115);
+context.lineTo(501, 213);
+context.stroke();
+context.closePath();
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(498, 210);
+context.lineTo(425, 304);
+context.stroke();
+context.closePath();
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(423, 305);
+context.lineTo(134, 306);
+context.stroke();
+context.closePath();
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(133, 302);
+context.lineTo(201, 223);
+context.stroke();
+context.closePath();
+
+context.strokeStyle = '#000000';
+context.beginPath();
+context.moveTo(199, 220);
+context.lineTo(135, 116);
+context.stroke();
+context.closePath();
+</script>
+</body>
+</html>
